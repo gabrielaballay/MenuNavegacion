@@ -39,5 +39,14 @@
         android:id="@+id/nav_send"
         android:name="com.example.menunavegacion.ui.send.SendFragment"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/fragment_send" >
+        <action
+            android:id="@+id/action_nav_send_to_enviado"
+            app:destination="@id/enviado" />
+    </fragment>
+    <fragment
+        android:id="@+id/enviado"
+        android:name="com.example.menunavegacion.Enviado"
+        android:label="fragment_enviado"
+        tools:layout="@layout/fragment_enviado" />
 </navigation>
